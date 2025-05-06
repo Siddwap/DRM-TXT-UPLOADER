@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: DRM Uploader bot
+    name: Text Leech Bot
     plan: free
     env: docker
     dockerfilePath: Dockerfile
@@ -9,12 +9,12 @@ services:
     autoDeploy: false
     envVars:
       - key: BOT_TOKEN
-        sync: 2087326318:AAGRcDp10n62WWmjZN4njTKQXf5rVOKZbmg
+        sync: false
       - key: API_ID
-        sync: 8087060
+        sync: false
       - key: API_HASH
-        sync: ead24e1abe37e9a80b16ef0f468350b6
+        sync: false
       - key: WEBHOOK
-        sync: True
+        sync: false
       - key: PORT
-        sync: 5375  # Default port value, update if needed
+        sync: false  # Default port value, update if needed
