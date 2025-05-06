@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: Text Leech Bot
+    name: DRM Uploader bot
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/AshutoshGoswami24/text-leech-bot-for-render
+    repo: https://github.com/Siddwap/DRM-TXT-UPLOADER/
     branch: main
     autoDeploy: false
     envVars:
