@@ -1,20 +1,17 @@
 services:
   - type: web
-    name: Text Leech Bot
     plan: free
-    env: docker
-    dockerfilePath: Dockerfile
-    repo: https://github.com/Siddwap/DRM-TXT-UPLOADER/
-    branch: main
-    autoDeploy: false
+    name: UPLOADER-BOT-V3
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    repo: https://github.com/Siddwap/DRM-TXT-UPLOADER      
+    branch: Master
     envVars:
-      - key: BOT_TOKEN
+      - key: BOT_TOKEN 
         sync: false
-      - key: API_ID
+      - key: API_ID 
         sync: false
       - key: API_HASH
         sync: false
-      - key: WEBHOOK
-        sync: false
-      - key: PORT
-        sync: false  # Default port value, update if needed
+    autoDeploy: false
